@@ -1,0 +1,5 @@
+ControlFocus("Open","","Edit1")
+Sleep(3000)
+ControlSetText("Open","","Edit1","C:\NgageAtomationFW\ngage_automation_smokesuite\src\test\resources\Documents\A3_103.pdf")
+Sleep(3000)
+ControlClick("Open","","Button1")

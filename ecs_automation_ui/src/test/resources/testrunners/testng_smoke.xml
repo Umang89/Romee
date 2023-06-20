@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ECS" verbose="3" thread-count="1" parallel="classes">
+
+	<listeners>
+		<listener
+			class-name="com.qa.ecs.listeners.AnnotationTransformer" />
+		<!--<listener
+			class-name="com.qa.ecs.listeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.ecs.listeners.TestAllureListener" /> -->
+	</listeners>
+
+	<test name="ECS Smoke Suite">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!--  -->
+			<class name="com.qa.ecs.smoke.HomePageTest"/>
+		</classes>
+	</test>
+
+</suite>
